@@ -1,0 +1,29 @@
+{
+    "name": "laravel-expansions/query-control-model",
+    "license": "MIT",
+    "type": "project",
+    "description": "QueryControlModel",
+    "homepage": "https://example.com",
+    "keywords": [
+        "laravel"
+    ],
+    "autoload": {
+        "psr-4": {
+            "LaravelExpansions\\QueryControlModel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Madaka Heri",
+            "email": "madakaheri@gmail.com"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelExpansions\\QueryControlModel\\ExpansionServiceProvider"
+            ]
+        }
+    }
+}
