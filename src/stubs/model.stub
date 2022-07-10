@@ -4,8 +4,14 @@ namespace {{ namespace }};
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use LaravelExpansions\QueryControlModel\Traits\QueryControlModel;
 
 class {{ class }} extends Model
 {
-    use HasFactory;
+    use HasFactory, QueryControlModel;
+
+    public function scopeQueryFilter($query)
+    {
+        return $query;
+    }
 }

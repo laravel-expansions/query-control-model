@@ -15,7 +15,10 @@ class {{ class }} extends Controller
      */
     public function index()
     {
-        //
+        return {{ model }}
+        ::queryControl()
+        ->queryFilter()
+        ->queryGet();
     }
 
     /**
@@ -32,12 +35,15 @@ class {{ class }} extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+     * @param  int | string  $id
      * @return \Illuminate\Http\Response
      */
-    public function show({{ model }} ${{ modelVariable }})
+    public function show($id)
     {
-        //
+        return {{ model }}
+        ::queryControl()
+        ->queryFilter()
+        ->findOrFail($id);
     }
 
     /**
