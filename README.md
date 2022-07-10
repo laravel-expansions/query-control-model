@@ -5,7 +5,7 @@ Response Controling by Request Query
 
 Please insttall in an existing Laravel project.
 ```
-composer require laravel-expansions/serverless-function
+composer require laravel-expansions/query-control-model
 ```
 
 Then use QueryControlModel on your Model.
