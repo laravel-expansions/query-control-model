@@ -11,6 +11,7 @@ await axios.get('/api/my-models', {
         select: 'id,name',      // <-- select columns
         with: 'items.subItems', // <-- append with relation
         withCount: 'items',     // <-- append relation count
+        limit: 10,              // <-- limit count
         
         /* Response type control */
 
