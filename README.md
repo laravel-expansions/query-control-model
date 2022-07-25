@@ -1,7 +1,7 @@
 # Query Control Model
-Power query controll your model
+No need GraqhQL. This is power query controll for your model.
 
-## Extend Query String Parameterså
+## Extend Query String Parameters
 ```javascript
 await axios.get('/api/my-models', {
     params: {
