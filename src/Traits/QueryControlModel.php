@@ -18,6 +18,9 @@ trait QueryControlModel
         })
         ->when(request()->query('withCount'), function ($query, $csv) {
             return $query->withCount(explode(',', $csv));
+        })
+        ->when(request()->query('limit'), function ($query, $val) {
+            return $query->limit($val);
         });
     }
 
