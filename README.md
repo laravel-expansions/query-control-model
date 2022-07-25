@@ -19,7 +19,7 @@ await axios.get('/api/my-models', {
         paginate: 10,           // <-- pagination count
         page: 1,                // <-- pagination page
         // or
-        // default: get()
+        // default: model list
     }
 })
 ```
